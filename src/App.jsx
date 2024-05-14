@@ -1,35 +1,73 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from "./components/header.jsx";
+import Container from "./components/container.jsx";
+// Images
+import portfolioImage from "./assets/portfolio.png";
+import gradegenieImage from "./assets/gradegenie.png";
+import todoImage from "./assets/todo.png";
+import spaceImage from "./assets/space.png";
+import weatherImage from "./assets/weatherapp.png";
+import shoppingImage from "./assets/shopping.png";
+
+const projects = [
+  {
+    imgUrl: portfolioImage,
+    altText: "Portfolio",
+    title: "Portfolio",
+    description: "A Showcase for the work i have done.",
+    github: "https://github.com/ahad324/Portfolio/",
+    LiveUrl: "https://ahad324.github.io/Portfolio/",
+  },
+  {
+    imgUrl: gradegenieImage,
+    alt: "Gradegenie",
+    title: "Gradegenie",
+    description:
+      "An Online tool to calculate gpa, cgpa and sgpa and many more.",
+    github: "https://github.com/ahad324/MarksCalculator/",
+    LiveUrl: "https://ahad324.github.io/MarksCalculator/",
+  },
+  {
+    imgUrl: todoImage,
+    alt: "Todo",
+    title: "TodoApp",
+    description: "A Todo website made with React.",
+    github: "https://github.com/ahad324/ReactTodoApp/",
+    LiveUrl: "https://ahad324.github.io/ReactTodoApp/",
+  },
+  {
+    imgUrl: spaceImage,
+    alt: "Space",
+    title: "Space Website",
+    description: "A simple website with multipages navigation.",
+    github: "https://github.com/ahad324/ReactTodoApp/",
+    LiveUrl: "https://ahad324.github.io/ReactTodoApp/",
+  },
+  {
+    imgUrl: weatherImage,
+    alt: "weatherApp",
+    title: "Weather App",
+    description: "A simple Weather website to see weather updates.",
+    github: "https://github.com/ahad324/ReactTodoApp/",
+    LiveUrl: "https://ahad324.github.io/ReactTodoApp/",
+  },
+  {
+    imgUrl: shoppingImage,
+    alt: "shoppingApp",
+    title: "Shopping App",
+    description:
+      "A simple Carting website to showcase some products and implementation of carting.",
+    github: "https://github.com/ahad324/ReactTodoApp/",
+    LiveUrl: "https://ahad324.github.io/ReactTodoApp/",
+  },
+];
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Container projects={projects} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
