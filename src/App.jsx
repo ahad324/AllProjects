@@ -39,16 +39,16 @@ const projects = [
     alt: "Space",
     title: "Space Website",
     description: "A simple website with multipages navigation.",
-    github: "https://github.com/ahad324/ReactTodoApp/",
-    LiveUrl: "https://ahad324.github.io/ReactTodoApp/",
+    github: "https://github.com/ahad324/SpaceWebsite",
+    LiveUrl: "https://ahad324.github.io/SpaceWebsite/",
   },
   {
     imgUrl: weatherImage,
     alt: "weatherApp",
     title: "Weather App",
     description: "A simple Weather website to see weather updates.",
-    github: "https://github.com/ahad324/ReactTodoApp/",
-    LiveUrl: "https://ahad324.github.io/ReactTodoApp/",
+    github: "https://github.com/ahad324/Weatherapp",
+    LiveUrl: "https://ahad324.github.io/WeatherApp/",
   },
   {
     imgUrl: shoppingImage,
@@ -56,8 +56,8 @@ const projects = [
     title: "Shopping App",
     description:
       "A simple Carting website to showcase some products and implementation of carting.",
-    github: "https://github.com/ahad324/ReactTodoApp/",
-    LiveUrl: "https://ahad324.github.io/ReactTodoApp/",
+    github: "https://github.com/ahad324/ShoppingApp/",
+    LiveUrl: "https://ahad324.github.io/ShoppingApp/",
   },
 ];
 
