@@ -1,9 +1,21 @@
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Comingsoon from "./comingsoon.jsx";
 import LazyLoad from "react-lazyload";
 import Loader from "./Loader.jsx";
 
 function Container({ projects }) {
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
     <main>
       <section>
@@ -17,7 +29,6 @@ function Container({ projects }) {
             >
               <div className="Image">
                 <img src={project.imgUrl} alt={project.altText} />
-                {console.log(project.altText)}
               </div>
             </LazyLoad>
             <div className="Details">
@@ -25,12 +36,7 @@ function Container({ projects }) {
               <p>{project.description}</p>
             </div>
             <div className="Buttons">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="opener referrer"
-                style={{ marginRight: "10px" }}
-              >
+              <a href={project.github} target="_blank" rel="opener referrer">
                 <button className="Github__Btn">
                   <i>
                     <FaGithub />

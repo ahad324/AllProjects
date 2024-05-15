@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-:root{
-  --primary-color:  linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);;
+:root {
+  --primary-color: linear-gradient(220.55deg, #4643df 0%, #0b0a47 100%);
   --secondary-color: #070096;
+}
 
+::-webkit-scrollbar {
+  width: 0px;
 }
 * {
   padding: 0;
@@ -27,7 +30,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px;
   background: var(--primary-color);
   font-weight: bold;
   color: white;
@@ -82,7 +85,9 @@ img {
 .Details {
   text-align: center;
 }
-
+a {
+  margin-right: 5px;
+}
 .Buttons {
   margin-top: 10px;
   display: flex;
@@ -109,5 +114,13 @@ i {
 @media screen and (max-width: 322px) {
   .Buttons {
     flex-direction: column;
+  }
+  section {
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
