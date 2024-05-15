@@ -4,8 +4,9 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Comingsoon from "./comingsoon.jsx";
 import LazyLoad from "react-lazyload";
 import Loader from "./Loader.jsx";
+import Data from "./Data.jsx";
 
-function Container({ projects }) {
+function Container() {
   useEffect(() => {
     const lenis = new Lenis();
     function raf(time) {
@@ -19,7 +20,7 @@ function Container({ projects }) {
   return (
     <main>
       <section>
-        {projects.map((project, index) => (
+        {Data.map((project, index) => (
           <div className="project" key={index}>
             <LazyLoad
               key={index}
