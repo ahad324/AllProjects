@@ -25,7 +25,12 @@ function Container({ projects }) {
               <p>{project.description}</p>
             </div>
             <div className="Buttons">
-              <a href={project.github} target="_blank" rel="opener referrer">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="opener referrer"
+                style={{ marginRight: "10px" }}
+              >
                 <button className="Github__Btn">
                   <i>
                     <FaGithub />
