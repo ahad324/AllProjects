@@ -17,6 +17,7 @@ function Container({ projects }) {
             >
               <div className="Image">
                 <img src={project.imgUrl} alt={project.altText} />
+                {console.log(project.altText)}
               </div>
             </LazyLoad>
             <div className="Details">

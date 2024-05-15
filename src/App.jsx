@@ -1,28 +1,28 @@
 import Header from "./components/header.jsx";
 import Container from "./components/container.jsx";
 // Images
-import portfolioImage from "./assets/portfolio.jpg";
-import gradegenieImage from "./assets/gradegenie.jpg";
-import todoImage from "./assets/todo.jpg";
-import spaceImage from "./assets/space.jpg";
-import weatherImage from "./assets/weatherapp.jpg";
-import shoppingImage from "./assets/shopping.jpg";
-import calculatorImage from "./assets/calculator.jpg";
-import loopstudioImage from "./assets/loopstudio.jpg";
-import formsImage from "./assets/forms.jpg";
-import passwordImage from "./assets/password.jpg";
-import projectschoolImage from "./assets/projectschool.jpg";
-import schoolmanagementImage from "./assets/schoolmanagement.jpg";
-import spotifyImage from "./assets/spotify.jpg";
-import tableImage from "./assets/table.jpg";
-import webcountImage from "./assets/webcount.jpg";
-import burgerImage from "./assets/burger.jpg";
-import fanImage from "./assets/fan.jpg";
-import launchcounterImage from "./assets/launchcounter.jpg";
-import introsectionImage from "./assets/introsection.jpg";
-import snakegameImage from "./assets/snakegame.jpg";
-import pianogameImage from "./assets/pianogame.jpg";
-import colorpaletteImage from "./assets/colorpalette.jpg";
+import portfolioImage from "./assets/portfolio.webp";
+import gradegenieImage from "./assets/gradegenie.webp";
+import todoImage from "./assets/todo.webp";
+import spaceImage from "./assets/space.webp";
+import weatherImage from "./assets/weatherapp.webp";
+import shoppingImage from "./assets/shopping.webp";
+import calculatorImage from "./assets/calculator.webp";
+import loopstudioImage from "./assets/loopstudio.webp";
+import formsImage from "./assets/forms.webp";
+import passwordImage from "./assets/password.webp";
+import projectschoolImage from "./assets/projectschool.webp";
+import schoolmanagementImage from "./assets/schoolmanagement.webp";
+import spotifyImage from "./assets/spotify.webp";
+import tableImage from "./assets/table.webp";
+import webcountImage from "./assets/webcount.webp";
+import burgerImage from "./assets/burger.webp";
+import fanImage from "./assets/fan.webp";
+import launchcounterImage from "./assets/launchcounter.webp";
+import introsectionImage from "./assets/introsection.webp";
+import snakegameImage from "./assets/snakegame.webp";
+import pianogameImage from "./assets/pianogame.webp";
+import colorpaletteImage from "./assets/colorpalette.webp";
 
 const projects = [
   {
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     imgUrl: gradegenieImage,
-    alt: "Gradegenie",
+    altText: "Gradegenie",
     title: "Gradegenie",
     description:
       "An Online tool to calculate gpa, cgpa and sgpa and many more.",
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     imgUrl: todoImage,
-    alt: "Todo",
+    altText: "Todo",
     title: "TodoApp",
     description: "A Todo website made with React.",
     github: "https://github.com/ahad324/ReactTodoApp/",
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     imgUrl: spaceImage,
-    alt: "Space",
+    altText: "Space",
     title: "Space Website",
     description: "A simple website with multipages navigation.",
     github: "https://github.com/ahad324/SpaceWebsite",
@@ -60,7 +60,7 @@ const projects = [
   },
   {
     imgUrl: weatherImage,
-    alt: "weatherApp",
+    altText: "weatherApp",
     title: "Weather App",
     description: "A simple Weather website to see weather updates.",
     github: "https://github.com/ahad324/Weatherapp",
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     imgUrl: shoppingImage,
-    alt: "shoppingApp",
+    altText: "shoppingApp",
     title: "Shopping App",
     description:
       "A simple Carting website to showcase some products and implementation of carting.",
@@ -77,7 +77,7 @@ const projects = [
   },
   {
     imgUrl: snakegameImage,
-    alt: "Snake Game",
+    altText: "Snake Game",
     title: "Snake Game",
     description: "A fun Snake Game 🐍.",
     github: "https://github.com/ahad324/SnakeGame/",
@@ -85,7 +85,7 @@ const projects = [
   },
   {
     imgUrl: pianogameImage,
-    alt: "Piano Game",
+    altText: "Piano Game",
     title: "Piano Game",
     description: "A fun Piano Game 🎹.",
     github: "https://github.com/ahad324/PianoGame/",
@@ -93,7 +93,7 @@ const projects = [
   },
   {
     imgUrl: colorpaletteImage,
-    alt: "Color Palette Game",
+    altText: "Color Palette Game",
     title: "Color Palette Generator",
     description: "A website that generates random color Palette.",
     github: "https://github.com/ahad324/ColorPaletteGenerator/",
@@ -101,7 +101,7 @@ const projects = [
   },
   {
     imgUrl: calculatorImage,
-    alt: "Calcualtor",
+    altText: "Calcualtor",
     title: "Calculator App",
     description: "A simple Calculator to perfrom some basic calculations.",
     github: "https://github.com/ahad324/Calculator-App/",
@@ -109,7 +109,7 @@ const projects = [
   },
   {
     imgUrl: formsImage,
-    alt: "Form",
+    altText: "Form",
     title: "Multi Forms",
     description: "A simple website that showcases multi forms.",
     github: "https://github.com/ahad324/TripleForms/",
@@ -117,7 +117,7 @@ const projects = [
   },
   {
     imgUrl: passwordImage,
-    alt: "password",
+    altText: "password",
     title: "Password Checker",
     description: "A website that check the password strength.",
     github: "https://github.com/ahad324/PasswordChecker",
@@ -125,7 +125,7 @@ const projects = [
   },
   {
     imgUrl: projectschoolImage,
-    alt: "Project School",
+    altText: "Project School",
     title: "School Website",
     description: "A simple school website.",
     github: "https://github.com/ahad324/schoolweb",
@@ -133,7 +133,7 @@ const projects = [
   },
   {
     imgUrl: schoolmanagementImage,
-    alt: "School Management",
+    altText: "School Management",
     title: "School Management System",
     description: "It's my semester project in c++.",
     github: "https://github.com/ahad324/WebSchoolManagement",
@@ -141,7 +141,7 @@ const projects = [
   },
   {
     imgUrl: spotifyImage,
-    alt: "Spotify",
+    altText: "Spotify",
     title: "Spotify",
     description: "A basic level spotify clone.",
     github: "https://github.com/ahad324/Spotify-NAAT",
@@ -149,7 +149,7 @@ const projects = [
   },
   {
     imgUrl: introsectionImage,
-    alt: "Intro section",
+    altText: "Intro section",
     title: "Hero Section",
     description: "A website's hero section design.",
     github: "https://github.com/ahad324/IntroSection",
@@ -157,7 +157,7 @@ const projects = [
   },
   {
     imgUrl: tableImage,
-    alt: "Table generator",
+    altText: "Table generator",
     title: "Table generator",
     description: "A website to generate multiplication table.",
     github: "https://github.com/ahad324/TableGenerator",
@@ -165,7 +165,7 @@ const projects = [
   },
   {
     imgUrl: webcountImage,
-    alt: "WebCounter",
+    altText: "WebCounter",
     title: "Launch Counter",
     description: "A website to inform people about the launch of anything.",
     github: "https://github.com/ahad324/WebCount",
@@ -173,7 +173,7 @@ const projects = [
   },
   {
     imgUrl: burgerImage,
-    alt: "Burger Menu",
+    altText: "Burger Menu",
     title: "Menu",
     description: "A website for the Menu of resturant.",
     github: "https://github.com/ahad324/BurgerMenu",
@@ -181,7 +181,7 @@ const projects = [
   },
   {
     imgUrl: fanImage,
-    alt: "Fan",
+    altText: "Fan",
     title: "Fan",
     description: "A fun website showing a Fan.",
     github: "https://github.com/ahad324/Fan",
@@ -189,7 +189,7 @@ const projects = [
   },
   {
     imgUrl: launchcounterImage,
-    alt: "Launch Counter",
+    altText: "Launch Counter",
     title: "Launching Counter",
     description: "A website to inform people about the launch of anything.",
     github: "https://github.com/ahad324/Launchcounter",
@@ -197,7 +197,7 @@ const projects = [
   },
   {
     imgUrl: loopstudioImage,
-    alt: "Loopstudio",
+    altText: "Loopstudio",
     title: "Loop Studio",
     description: "A simple website (not responsive).",
     github: "https://github.com/ahad324/Loopstudios/",
