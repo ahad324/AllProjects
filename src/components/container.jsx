@@ -24,7 +24,7 @@ function Container() {
           <div className="project" key={index}>
             <LazyLoad
               key={index}
-              height={200}
+              height={300}
               offset={500}
               placeholder={<Loader />}
             >
