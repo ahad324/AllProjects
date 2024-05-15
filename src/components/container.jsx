@@ -1,5 +1,7 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Comingsoon from "./comingsoon.jsx";
+import LazyLoad from "react-lazyload";
+import Loader from "./Loader.jsx";
 
 function Container({ projects }) {
   return (
@@ -7,9 +9,16 @@ function Container({ projects }) {
       <section>
         {projects.map((project, index) => (
           <div className="project" key={index}>
-            <div className="Image">
-              <img src={project.imgUrl} alt={project.altText} loading="lazy" />
-            </div>
+            <LazyLoad
+              key={index}
+              height={200}
+              offset={500}
+              placeholder={<Loader />}
+            >
+              <div className="Image">
+                <img src={project.imgUrl} alt={project.altText} />
+              </div>
+            </LazyLoad>
             <div className="Details">
               <h2>{project.title}</h2>
               <p>{project.description}</p>

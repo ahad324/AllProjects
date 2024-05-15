@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root{
+  --primary-color:  linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);;
+  --secondary-color: #070096;
 
+}
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +14,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 *::selection {
-  color: #070096;
+  color: var(--secondary-color);
 }
 .comingsoon {
   display: flex;
@@ -24,7 +28,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  background: #009688;
+  background: var(--primary-color);
   font-weight: bold;
   color: white;
   font-size: 2rem;
@@ -89,7 +93,7 @@ img {
 button {
   padding: 10px 10px;
   margin: 5px;
-  background: #009688; /* #007bff  #3F51B5*/
+  background: var(--primary-color); /* #007bff  #3F51B5*/
   color: #fff;
   border: none;
   border-radius: 5px;

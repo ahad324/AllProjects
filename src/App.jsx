@@ -20,6 +20,9 @@ import burgerImage from "./assets/burger.jpg";
 import fanImage from "./assets/fan.jpg";
 import launchcounterImage from "./assets/launchcounter.jpg";
 import introsectionImage from "./assets/introsection.jpg";
+import snakegameImage from "./assets/snakegame.jpg";
+import pianogameImage from "./assets/pianogame.jpg";
+import colorpaletteImage from "./assets/colorpalette.jpg";
 
 const projects = [
   {
@@ -71,6 +74,30 @@ const projects = [
       "A simple Carting website to showcase some products and implementation of carting.",
     github: "https://github.com/ahad324/ShoppingApp/",
     LiveUrl: "https://ahad324.github.io/ShoppingApp/",
+  },
+  {
+    imgUrl: snakegameImage,
+    alt: "Snake Game",
+    title: "Snake Game",
+    description: "A fun Snake Game 🐍.",
+    github: "https://github.com/ahad324/SnakeGame/",
+    LiveUrl: "https://ahad324.github.io/SnakeGame/",
+  },
+  {
+    imgUrl: pianogameImage,
+    alt: "Piano Game",
+    title: "Piano Game",
+    description: "A fun Piano Game 🎹.",
+    github: "https://github.com/ahad324/PianoGame/",
+    LiveUrl: "https://ahad324.github.io/PianoGame/",
+  },
+  {
+    imgUrl: colorpaletteImage,
+    alt: "Color Palette Game",
+    title: "Color Palette Generator",
+    description: "A website that generates random color Palette.",
+    github: "https://github.com/ahad324/ColorPaletteGenerator/",
+    LiveUrl: "https://ahad324.github.io/ColorPaletteGenerator/",
   },
   {
     imgUrl: calculatorImage,
