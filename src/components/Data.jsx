@@ -45,7 +45,7 @@ const Data = [
     imgUrl: todoImage,
     altText: "Todo",
     title: "TodoApp",
-    description: "A Todo website made with React.",
+    description: "A Web-based Todo app made with React.",
     github: "https://github.com/ahad324/ReactTodoApp/",
     LiveUrl: "https://ahad324.github.io/ReactTodoApp/",
   },

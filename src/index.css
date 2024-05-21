@@ -11,13 +11,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-shadow: -4px 5px 17px rgb(0 0 0 / 20%);
 }
 
 body {
   font-family: "Poppins", sans-serif;
-}
-*::selection {
-  color: var(--secondary-color);
 }
 .comingsoon {
   display: flex;
@@ -52,6 +50,7 @@ section {
 .project {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #e5e5e5;
   border-radius: 10px;
@@ -61,9 +60,7 @@ section {
     4px -5px 17px 0px rgb(0 0 0 / 20%), -4px -5px;
   transition: 0.1s all ease;
 }
-section:hover .project:not(:hover) {
-  transform: scale(0.99);
-}
+
 .Image {
   min-width: 200px;
   min-height: 200px;
@@ -80,13 +77,19 @@ img {
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%);
 }
 
 .Details {
   text-align: center;
 }
 a {
-  margin-right: 5px;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 .Buttons {
   margin-top: 10px;
@@ -96,17 +99,19 @@ a {
 }
 
 button {
+  width: 120px;
+  height: 40px;
   padding: 10px 10px;
-  margin: 5px;
   background: var(--primary-color); /* #007bff  #3F51B5*/
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%);
 }
 
 button:hover {
-  background: #2f887f;
+  background: var(--secondary-color);
 }
 i {
   margin: 5px;
