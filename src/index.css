@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   --primary-color: linear-gradient(220.55deg, #4643df 0%, #0b0a47 100%);
-  --secondary-color: #070096;
+  --secondary-color: #0b0a47;
 }
 
 ::-webkit-scrollbar {
@@ -90,28 +90,20 @@ a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+}
+a:hover {
+  box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%);
+  background: var(--secondary-color);
 }
 .Buttons {
   margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-button {
-  width: 120px;
-  height: 40px;
-  padding: 10px 10px;
-  background: var(--primary-color); /* #007bff  #3F51B5*/
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%);
-}
-
-button:hover {
-  background: var(--secondary-color);
 }
 i {
   margin: 5px;

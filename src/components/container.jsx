@@ -37,25 +37,27 @@ function Container() {
               <p>{project.description}</p>
             </div>
             <div className="Buttons">
-              <a href={project.github} target="_blank" rel="opener referrer">
-                <button className="Github__Btn">
-                  <i>
-                    <FaGithub />
-                  </i>
-                  GitHub
-                </button>
+              <a
+                href={project.github}
+                className="Github__Btn"
+                target="_blank"
+                rel="opener referrer"
+              >
+                <i>
+                  <FaGithub />
+                </i>
+                GitHub
               </a>
               <a
                 href={project.LiveUrl}
+                className="LivePreview__Btn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="LivePreview__Btn">
-                  Live Preview
-                  <i>
-                    <FaExternalLinkAlt />
-                  </i>
-                </button>
+                Live Preview
+                <i>
+                  <FaExternalLinkAlt />
+                </i>
               </a>
             </div>
           </div>
