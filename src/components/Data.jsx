@@ -22,8 +22,17 @@ import introsectionImage from "../assets/introsection.webp";
 import snakegameImage from "../assets/snakegame.webp";
 import pianogameImage from "../assets/pianogame.webp";
 import colorpaletteImage from "../assets/colorpalette.webp";
+import chatappImage from "../assets/chatapp.webp";
 
 const Data = [
+  {
+    imgUrl: chatappImage,
+    altText: "Chat App",
+    title: "Chat App",
+    description: "A Real-Time Chat Application with React and Appwrite.",
+    github: "https://github.com/ahad324/chatApp/",
+    LiveUrl: "https://rchatting.netlify.app",
+  },
   {
     imgUrl: portfolioImage,
     altText: "Portfolio",
