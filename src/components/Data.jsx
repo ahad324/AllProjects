@@ -23,8 +23,18 @@ import snakegameImage from "../assets/snakegame.webp";
 import pianogameImage from "../assets/pianogame.webp";
 import colorpaletteImage from "../assets/colorpalette.webp";
 import chatappImage from "../assets/chatapp.webp";
+import bmsImage from "../assets/bms.webp";
 
 const Data = [
+  {
+    imgUrl: bmsImage,
+    altText: "BankManagementSystem",
+    title: "Bank Management System",
+    description:
+      "A Banking Management System build with C++ for Front-End and js for backend.",
+    github: "https://github.com/ahad324/BankManagementSystemCpp",
+    LiveUrl: "https://bmscpp.netlify.app/",
+  },
   {
     imgUrl: chatappImage,
     altText: "Chat App",
