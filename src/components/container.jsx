@@ -40,7 +40,12 @@ function Container() {
           onChange={handleSearch}
           placeholder="Search Projects..."
         />
-        <button className="searchButton" name="Search Button" href="#">
+        <button
+          className="searchButton"
+          aria-label="Search"
+          title="Search"
+          href="#"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="29"
