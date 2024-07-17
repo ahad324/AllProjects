@@ -40,7 +40,7 @@ function Container() {
           onChange={handleSearch}
           placeholder="Search Projects..."
         />
-        <button className="searchButton" href="#">
+        <button className="searchButton" name="Search Button" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="29"
