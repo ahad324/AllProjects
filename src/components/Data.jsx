@@ -24,8 +24,17 @@ import pianogameImage from "../assets/pianogame.webp";
 import colorpaletteImage from "../assets/colorpalette.webp";
 import chatappImage from "../assets/chatapp.webp";
 import bmsImage from "../assets/bms.webp";
+import coderscaffeeImage from "../assets/coderscaffee.webp";
 
 const Data = [
+  {
+    imgUrl: coderscaffeeImage,
+    altText: "Coder's Caffee Image",
+    title: "Coder's Caffee",
+    description: "A simple animated website made with React and framer motion.",
+    github: "https://github.com/ahad324/CodersCafe",
+    LiveUrl: "https://coderscaffee.netlify.app/",
+  },
   {
     imgUrl: bmsImage,
     altText: "BankManagementSystem",
