@@ -108,6 +108,7 @@ a:hover {
 i {
   margin: 5px;
 }
+/* Search Box Styles */
 .searchBox {
   display: flex;
   max-width: 320px;
@@ -127,15 +128,19 @@ i {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+  background: var(
+    --gradient-2,
+    linear-gradient(90deg, #2af598 0%, #009efd 100%)
+  );
   border: 0;
   display: inline-block;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  font-size: 1.5rem;
 }
 /*hover effect*/
 button:hover {
   color: #fff;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
   transform: translateY(-3px);
 }
@@ -153,8 +158,52 @@ button:active {
   font-size: 15px;
   padding: 24px 46px 24px 26px;
 }
-
-
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.pagination button {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 15px;
+  font-weight: 600;
+  padding: .5em 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+  &:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+  }
+  &:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+  }
+}
+.pagination div{
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination div> span {
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  &:hover {
+    background: #afb0b1;
+  }
+  &.activePaginationPage{
+    background:var(--primary-color);
+    color: white;
+  }
+}
 @media screen and (max-width: 322px) {
   .Buttons {
     flex-direction: column;
