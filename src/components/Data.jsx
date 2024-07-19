@@ -25,8 +25,18 @@ import colorpaletteImage from "../assets/colorpalette.webp";
 import chatappImage from "../assets/chatapp.webp";
 import bmsImage from "../assets/bms.webp";
 import coderscaffeeImage from "../assets/coderscaffee.webp";
+import homebudgetImage from "../assets/homebudget.webp";
 
 const Data = [
+  {
+    imgUrl: homebudgetImage,
+    altText: "Home Budget Image",
+    title: "Home Budget",
+    description:
+      "It's an Expense Tracker website made with React with a lot of features.",
+    github: "https://github.com/ahad324/HomeBudget",
+    LiveUrl: "https://homebudget-react.netlify.app/",
+  },
   {
     imgUrl: coderscaffeeImage,
     altText: "Coder's Caffee Image",
