@@ -7,8 +7,8 @@
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
-  min-width: 300px;
-  font-size: 14px;
+  width: 100%;
+  font-weight: 900;
 }
 
 .radio-inputs .radio {
@@ -24,14 +24,19 @@
   display: flex;
   cursor: pointer;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   border-radius: 0.5rem;
   border: none;
   padding: 0.5rem 0;
   color: var(--card-background);
   transition: all 0.15s ease-in-out;
 }
-
+.name > small{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2px;
+}
 .radio-inputs .radio input:checked + .name {
   background-color: var(--secondary-color);
   font-weight: 600;

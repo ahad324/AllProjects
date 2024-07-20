@@ -31,7 +31,8 @@ const Filters = ({ onFilterChange }) => {
               onChange={() => handleFilterChange(filter.name)}
             />
             <span className="name">
-              {filter.icon} {filter.name}
+              <small>{filter.icon}</small>
+              {filter.name}
             </span>
           </label>
         ))}

@@ -108,6 +108,7 @@ function Container() {
       <div className="Filter-SearchBox">
         <BlurFade className="searchBox" delay={0.2} inview>
           <input
+            name="searchBox"
             className="searchInput"
             value={searchTerm}
             onChange={handleSearch}

@@ -157,7 +157,9 @@ button:active {
   box-shadow: none;
   transform: translateY(0);
 }
-
+.Filter {
+  width: 50%;
+}
 .searchInput {
   border: none;
   background: none;
@@ -217,15 +219,15 @@ button:active {
   .Buttons {
     flex-direction: column;
   }
-  .ProjectsSection {
-    margin-top: 20%;
-  }
 }
 @media screen and (max-width: 600px) {
   .Filter-SearchBox {
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 30dvh;
+    min-height: 25vh;
+    margin: 15% 0;
+  }
+  .Filter {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
