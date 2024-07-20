@@ -3,8 +3,8 @@
   --primary-color: #000814;
   --secondary-color: #ffc300;
   --text-color: #000000;
-  --card-background:#e5e5e5;
-  --background:hsl(190 60% 98%);
+  --card-background: #e5e5e5;
+  --background: hsl(190 60% 98%);
 }
 
 ::-webkit-scrollbar {
@@ -20,11 +20,11 @@ body {
   font-family: "Poppins", sans-serif;
   background: var(--background);
 }
-body.dark{
-  --primary-color:#ffc300;
-  --secondary-color:#000814;
-  --text-color:#e5e5e5;
-  --card-background:#000814;
+body.dark {
+  --primary-color: #ffc300;
+  --secondary-color: #000814;
+  --text-color: #e5e5e5;
+  --card-background: #000814;
   background: var(--secondary-color);
 }
 .comingsoon {
@@ -32,7 +32,7 @@ body.dark{
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  color: gray
+  color: gray;
 }
 main {
   width: 100%;
@@ -49,14 +49,14 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
-.card-container{
+.card-container {
   perspective: 1000px;
 }
 .card-body {
   transform-style: preserve-3d;
 }
 .card-item {
-  transition: .3s all ease;
+  transition: 0.3s all ease;
   transition: transform 0.2s ease-linear;
 }
 .project {
