@@ -36,6 +36,7 @@ const Data = [
       "It's an Expense Tracker website made with React with a lot of features.",
     github: "https://github.com/ahad324/HomeBudget",
     LiveUrl: "https://homebudget-react.netlify.app/",
+    category: ["react", "featured"],
   },
   {
     imgUrl: coderscaffeeImage,
@@ -44,6 +45,7 @@ const Data = [
     description: "A simple animated website made with React and framer motion.",
     github: "https://github.com/ahad324/CodersCafe",
     LiveUrl: "https://coderscaffee.netlify.app/",
+    category: ["react"],
   },
   {
     imgUrl: bmsImage,
@@ -53,6 +55,7 @@ const Data = [
       "A Banking Management System build with C++ for Front-End and js for backend.",
     github: "https://github.com/ahad324/BankManagementSystemCpp",
     LiveUrl: "https://bmscpp.netlify.app/",
+    category: ["react", "c++"],
   },
   {
     imgUrl: chatappImage,
@@ -61,14 +64,17 @@ const Data = [
     description: "A Real-Time Chat Application with React and Appwrite.",
     github: "https://github.com/ahad324/chatApp/",
     LiveUrl: "https://rchatting.netlify.app",
+    category: ["react", "appwrite", "featured"],
   },
   {
     imgUrl: portfolioImage,
     altText: "Portfolio",
     title: "Portfolio",
-    description: "A Showcase for the work i have done.",
+    description:
+      "This is my Personal Portfolio it includes the HTML , CSS and JS projects.",
     github: "https://github.com/ahad324/Portfolio/",
     LiveUrl: "https://ahad324.github.io/Portfolio/",
+    category: ["html", "css", "js", "featured"],
   },
   {
     imgUrl: gradegenieImage,
@@ -78,6 +84,7 @@ const Data = [
       "An Online tool to calculate gpa, cgpa and sgpa and many more.",
     github: "https://github.com/ahad324/MarksCalculator/",
     LiveUrl: "https://ahad324.github.io/MarksCalculator/",
+    category: ["html", "css", "js", "featured"],
   },
   {
     imgUrl: todoImage,
@@ -86,6 +93,7 @@ const Data = [
     description: "A Web-based Todo app made with React.",
     github: "https://github.com/ahad324/ReactTodoApp/",
     LiveUrl: "https://ahad324.github.io/ReactTodoApp/",
+    category: ["react"],
   },
   {
     imgUrl: spaceImage,
@@ -94,6 +102,7 @@ const Data = [
     description: "A simple website with multipages navigation.",
     github: "https://github.com/ahad324/SpaceWebsite",
     LiveUrl: "https://ahad324.github.io/SpaceWebsite/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: weatherImage,
@@ -102,6 +111,7 @@ const Data = [
     description: "A simple Weather website to see weather updates.",
     github: "https://github.com/ahad324/Weatherapp",
     LiveUrl: "https://ahad324.github.io/WeatherApp/",
+    category: ["html", "css", "js", "featured"],
   },
   {
     imgUrl: shoppingImage,
@@ -111,6 +121,7 @@ const Data = [
       "A simple Carting website to showcase some products and implementation of carting.",
     github: "https://github.com/ahad324/ShoppingApp/",
     LiveUrl: "https://ahad324.github.io/ShoppingApp/",
+    category: ["html", "css", "js", "featured"],
   },
   {
     imgUrl: snakegameImage,
@@ -119,6 +130,7 @@ const Data = [
     description: "A fun Snake Game 🐍.",
     github: "https://github.com/ahad324/SnakeGame/",
     LiveUrl: "https://ahad324.github.io/SnakeGame/",
+    category: ["html", "css", "js", "featured"],
   },
   {
     imgUrl: pianogameImage,
@@ -127,6 +139,7 @@ const Data = [
     description: "A fun Piano Game 🎹.",
     github: "https://github.com/ahad324/PianoGame/",
     LiveUrl: "https://ahad324.github.io/PianoGame/",
+    category: ["html", "css", "js", "featured"],
   },
   {
     imgUrl: colorpaletteImage,
@@ -135,6 +148,7 @@ const Data = [
     description: "A website that generates random color Palette.",
     github: "https://github.com/ahad324/ColorPaletteGenerator/",
     LiveUrl: "https://ahad324.github.io/ColorPaletteGenerator/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: calculatorImage,
@@ -143,6 +157,7 @@ const Data = [
     description: "A simple Calculator to perfrom some basic calculations.",
     github: "https://github.com/ahad324/Calculator-App/",
     LiveUrl: "https://ahad324.github.io/Calculator-App/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: formsImage,
@@ -151,6 +166,7 @@ const Data = [
     description: "A simple website that showcases multi forms.",
     github: "https://github.com/ahad324/TripleForms/",
     LiveUrl: "https://ahad324.github.io/TripleForms/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: passwordImage,
@@ -159,6 +175,7 @@ const Data = [
     description: "A website that check the password strength.",
     github: "https://github.com/ahad324/PasswordChecker",
     LiveUrl: "https://ahad324.github.io/PasswordChecker/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: projectschoolImage,
@@ -167,6 +184,7 @@ const Data = [
     description: "A simple school website.",
     github: "https://github.com/ahad324/schoolweb",
     LiveUrl: "https://ahad324.github.io/schoolweb/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: schoolmanagementImage,
@@ -175,6 +193,7 @@ const Data = [
     description: "It's my semester project in c++.",
     github: "https://github.com/ahad324/WebSchoolManagement",
     LiveUrl: "https://ahad324.github.io/WebSchoolManagement/",
+    category: ["html", "css", "js", "c++"],
   },
   {
     imgUrl: spotifyImage,
@@ -183,6 +202,7 @@ const Data = [
     description: "A basic level spotify clone.",
     github: "https://github.com/ahad324/Spotify-NAAT",
     LiveUrl: "https://ahad324.github.io/Spotify-NAAT/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: introsectionImage,
@@ -191,6 +211,7 @@ const Data = [
     description: "A website's hero section design.",
     github: "https://github.com/ahad324/IntroSection",
     LiveUrl: "https://ahad324.github.io/IntroSection/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: tableImage,
@@ -199,6 +220,7 @@ const Data = [
     description: "A website to generate multiplication table.",
     github: "https://github.com/ahad324/TableGenerator",
     LiveUrl: "https://ahad324.github.io/TableGenerator/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: webcountImage,
@@ -207,6 +229,7 @@ const Data = [
     description: "A website to inform people about the launch of anything.",
     github: "https://github.com/ahad324/WebCount",
     LiveUrl: "https://ahad324.github.io/WebCount/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: burgerImage,
@@ -215,6 +238,7 @@ const Data = [
     description: "A website for the Menu of resturant.",
     github: "https://github.com/ahad324/BurgerMenu",
     LiveUrl: "https://ahad324.github.io/BurgerMenu/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: fanImage,
@@ -223,6 +247,7 @@ const Data = [
     description: "A fun website showing a Fan.",
     github: "https://github.com/ahad324/Fan",
     LiveUrl: "https://ahad324.github.io/Fan/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: launchcounterImage,
@@ -231,6 +256,7 @@ const Data = [
     description: "A website to inform people about the launch of anything.",
     github: "https://github.com/ahad324/Launchcounter",
     LiveUrl: "https://ahad324.github.io/Launchcounter/",
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: loopstudioImage,
@@ -239,6 +265,7 @@ const Data = [
     description: "A simple website (not responsive).",
     github: "https://github.com/ahad324/Loopstudios/",
     LiveUrl: "https://ahad324.github.io/Loopstudios/",
+    category: ["html", "css", "js"],
   },
 ];
 

@@ -6,9 +6,11 @@ import LazyLoad from "react-lazyload";
 import Loader from "./Loader.jsx";
 import Data from "./Data.jsx";
 import BlurFade from "./UI/BlurFade";
+import Filters from "./Filters.jsx";
 
 function Container() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedFilter, setSelectedFilter] = useState(""); // Change to a single filter
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 3;
 
@@ -22,13 +24,24 @@ function Container() {
     requestAnimationFrame(raf);
   }, []);
 
-  const filteredData = useMemo(
-    () =>
-      Data.filter((project) =>
-        project.title.toLowerCase().includes(searchTerm.toLowerCase())
-      ),
-    [searchTerm]
-  );
+  const handleFilterChange = (filter) => {
+    setSelectedFilter(filter); // Update to handle a single filter
+    setCurrentPage(1); // Reset to the first page when filters change
+  };
+
+  const filteredData = useMemo(() => {
+    return Data.filter((project) => {
+      const matchesSearchTerm = project.title
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase());
+      const matchesFilter =
+        selectedFilter === "" ||
+        project.category
+          .map((cat) => cat.toLowerCase())
+          .includes(selectedFilter.toLowerCase());
+      return matchesSearchTerm && matchesFilter;
+    });
+  }, [searchTerm, selectedFilter]);
 
   const currentProjects = useMemo(() => {
     const indexOfLastProject = currentPage * projectsPerPage;
@@ -93,32 +106,37 @@ function Container() {
 
   return (
     <main>
-      <BlurFade className="searchBox" inView delay={0.2} Once={false}>
-        <input
-          className="searchInput"
-          value={searchTerm}
-          onChange={handleSearch}
-          placeholder="Search Projects..."
-        />
-        <button
-          className="searchButton"
-          aria-label="Search"
-          title="Search"
-          href="#"
-          type="button"
-        >
-          <FaSearch />
-        </button>
-      </BlurFade>
+      <div className="Filter-SearchBox" delay={0.2} once={false} inview>
+        <BlurFade className="searchBox" delay={0.2} once={false} inview>
+          <input
+            className="searchInput"
+            value={searchTerm}
+            onChange={handleSearch}
+            placeholder="Search Projects..."
+          />
+          <button
+            className="searchButton"
+            aria-label="Search"
+            title="Search"
+            href="#"
+            type="button"
+          >
+            <FaSearch />
+          </button>
+        </BlurFade>
+        <BlurFade className="Filter" delay={0.5} once={false} inview>
+          <Filters onFilterChange={handleFilterChange} />
+        </BlurFade>
+      </div>
 
       <section>
         {currentProjects.map((project, index) => (
           <BlurFade
             className="project"
             key={crypto.randomUUID()}
-            inView
             delay={0.25 + index * 0.2}
-            Once={false}
+            once={false}
+            inview
           >
             <LazyLoad height={400} offset={500} placeholder={<Loader />}>
               <div className="Image">
@@ -151,7 +169,7 @@ function Container() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Preview
+                Live
                 <i>
                   <FaExternalLinkAlt />
                 </i>

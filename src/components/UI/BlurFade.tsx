@@ -13,10 +13,10 @@ interface BlurFadeProps {
   duration?: number;
   delay?: number;
   yOffset?: number;
-  inView?: boolean;
+  inview?: boolean;
   inViewMargin?: string;
   blur?: string;
-  Once?:boolean
+  once?:boolean
 }
 
 export default function BlurFade({
@@ -26,14 +26,14 @@ export default function BlurFade({
   duration = 0.4,
   delay = 0,
   yOffset = 6,
-  inView = false,
+  inview = false,
   inViewMargin = "-50px",
   blur = "6px",
-  Once=true
+  once=true
 }: BlurFadeProps) {
   const ref = useRef(null);
-  const inViewResult = useInView(ref, { once: Once, margin: inViewMargin });
-  const isInView = !inView || inViewResult;
+  const inViewResult = useInView(ref, { once: once, margin: inViewMargin });
+  const isInView = !inview || inViewResult;
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
     visible: { y: -yOffset, opacity: 1, filter: `blur(0px)` },

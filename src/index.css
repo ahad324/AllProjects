@@ -16,6 +16,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: hsl(190 60% 98%);
 }
 .comingsoon {
   display: flex;
@@ -34,13 +35,60 @@ header {
   color: white;
   font-size: 2rem;
   box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%);
+/* 
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 90%;
+    max-width: 50%;
+    margin: auto;
+    border-radius: 60px;
+    top: 5px;
+    position: relative;
+
+
+    background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+/*  */
+/* display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+font-weight: bold;
+font-size: 2rem;
+width: 90%;
+max-width: 100%;
+border-radius: 60px;
+top: 5px;
+position: fixed;
+background: rgb(24 23 23);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+color: whitesmoke;
+z-index: 9;
+margin: auto 5%;
+border: 2px solid var(--secondary-color); */ 
 }
 
 main {
   width: 100%;
   padding: 5%;
 }
-
+.Filter-SearchBox{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -84,7 +132,7 @@ img {
   text-align: center;
 }
 a {
-  width: 140px;
+  width: 100px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -118,7 +166,6 @@ i {
   background: #2f3640;
   border-radius: 50px;
   position: relative;
-  margin-bottom: 5%;
 }
 
 .searchButton {
@@ -212,6 +259,11 @@ button:active {
     margin-top: 20%;
   }
 }
+@media screen and (max-width: 600px){  .Filter-SearchBox{
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 30dvh;
+}}
 @media screen and (min-width: 1200px) {
   section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
