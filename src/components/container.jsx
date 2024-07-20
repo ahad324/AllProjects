@@ -1,12 +1,11 @@
 import { useEffect, useState, useMemo, useCallback } from "react";
 import Lenis from "@studio-freight/lenis";
-import { FaGithub, FaExternalLinkAlt, FaSearch } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import Comingsoon from "./comingsoon.jsx";
-import LazyLoad from "react-lazyload";
-import Loader from "./Loader.jsx";
 import Data from "./Data.jsx";
 import BlurFade from "./UI/BlurFade";
 import Filters from "./Filters.jsx";
+import Card from "./Card.jsx";
 
 function Container() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -106,7 +105,7 @@ function Container() {
 
   return (
     <main>
-      <div className="Filter-SearchBox" delay={0.2} once={false} inview>
+      <div className="Filter-SearchBox">
         <BlurFade className="searchBox" delay={0.2} once={false} inview>
           <input
             className="searchInput"
@@ -131,51 +130,7 @@ function Container() {
 
       <section>
         {currentProjects.map((project, index) => (
-          <BlurFade
-            className="project"
-            key={crypto.randomUUID()}
-            delay={0.25 + index * 0.2}
-            once={false}
-            inview
-          >
-            <LazyLoad height={400} offset={500} placeholder={<Loader />}>
-              <div className="Image">
-                <img
-                  src={project.imgUrl}
-                  alt={project.altText}
-                  className="project-img"
-                />
-              </div>
-            </LazyLoad>
-            <div className="Details">
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
-            </div>
-            <div className="Buttons">
-              <a
-                href={project.github}
-                className="Github__Btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i>
-                  <FaGithub />
-                </i>
-                GitHub
-              </a>
-              <a
-                href={project.LiveUrl}
-                className="LivePreview__Btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live
-                <i>
-                  <FaExternalLinkAlt />
-                </i>
-              </a>
-            </div>
-          </BlurFade>
+          <Card key={crypto.randomUUID()} project={project} index={index} />
         ))}
         {currentPage === totalPages && <Comingsoon />}
       </section>

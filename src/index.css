@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color: linear-gradient(220.55deg, #4643df 0%, #0b0a47 100%);
-  --secondary-color: #0b0a47;
+  --primary-color: #000814;
+  --secondary-color: #ffc300;
+  --text-color: #000000;
+  --card-background:#e5e5e5;
 }
 
 ::-webkit-scrollbar {
@@ -18,6 +20,13 @@ body {
   font-family: "Poppins", sans-serif;
   background: hsl(190 60% 98%);
 }
+body.dark{
+  --primary-color:#ffc300;
+  --secondary-color:#000814;
+  --text-color:#e5e5e5;
+  --card-background:#000814;
+  background: var(--secondary-color);
+}
 .comingsoon {
   display: flex;
   justify-content: center;
@@ -32,81 +41,49 @@ header {
   padding: 20px;
   background: var(--primary-color);
   font-weight: bold;
-  color: white;
+  color: var(--secondary-color);
   font-size: 2rem;
   box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%);
-/* 
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    font-weight: bold;
-    font-size: 2rem;
-    width: 90%;
-    max-width: 50%;
-    margin: auto;
-    border-radius: 60px;
-    top: 5px;
-    position: relative;
-
-
-    background: rgba(255, 255, 255, 0.2);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-
-/*  */
-/* display: flex;
-justify-content: center;
-align-items: center;
-padding: 20px;
-font-weight: bold;
-font-size: 2rem;
-width: 90%;
-max-width: 100%;
-border-radius: 60px;
-top: 5px;
-position: fixed;
-background: rgb(24 23 23);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-color: whitesmoke;
-z-index: 9;
-margin: auto 5%;
-border: 2px solid var(--secondary-color); */ 
 }
 
 main {
   width: 100%;
   padding: 5%;
 }
-.Filter-SearchBox{
+.Filter-SearchBox {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
 }
 section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
-
+.card-container{
+  perspective: 1000px;
+}
+.card-body {
+  transform-style: preserve-3d;
+}
+.card-item {
+  transition: .3s all ease;
+  transition: transform 0.2s ease-linear;
+}
 .project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e5e5e5;
+  background: var(--card-background);
   border-radius: 10px;
   padding: 20px;
   border: 1px solid #a1a1a1;
   box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%), 4px 5px,
     4px -5px 17px 0px rgb(0 0 0 / 20%), -4px -5px;
   transition: 0.1s all ease;
+  color: var(--text-color);
 }
 
 .Image {
@@ -114,11 +91,6 @@ section {
   min-height: 200px;
   width: 100%;
   height: auto;
-  transition: 0.1s all ease;
-}
-.Image:hover {
-  transition: 0.1s all ease;
-  transform: scale(1.1);
 }
 img {
   width: 100%;
@@ -139,13 +111,14 @@ a {
   align-items: center;
   text-decoration: none;
   background: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
   border-radius: 5px;
   margin: 5px;
 }
 a:hover {
   box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%);
   background: var(--secondary-color);
+  color: var(--primary-color);
 }
 .Buttons {
   margin-top: 10px;
@@ -218,7 +191,7 @@ button:active {
   border-radius: 10em;
   font-size: 15px;
   font-weight: 600;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   border: 1px solid black;
@@ -232,23 +205,24 @@ button:active {
     box-shadow: 0 0 0 0 black;
   }
 }
-.pagination div{
+.pagination div {
   margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.pagination div> span {
+.pagination div > span {
   padding: 5px 10px;
   text-align: center;
   border-radius: 3px;
   cursor: pointer;
+  color: var(--text-color);
   &:hover {
     background: #afb0b1;
   }
-  &.activePaginationPage{
-    background:var(--primary-color);
-    color: white;
+  &.activePaginationPage {
+    background: var(--primary-color);
+    color: var(--secondary-color);
   }
 }
 @media screen and (max-width: 322px) {
@@ -259,11 +233,13 @@ button:active {
     margin-top: 20%;
   }
 }
-@media screen and (max-width: 600px){  .Filter-SearchBox{
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 30dvh;
-}}
+@media screen and (max-width: 600px) {
+  .Filter-SearchBox {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 30dvh;
+  }
+}
 @media screen and (min-width: 1200px) {
   section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

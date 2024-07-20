@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   border-radius: 0.5rem;
-  background-color: #EEE;
+  background-color: var(--primary-color);
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
@@ -27,15 +27,16 @@
   justify-content: center;
   border-radius: 0.5rem;
   border: none;
-  padding: .5rem 0;
-  color: rgba(51, 65, 85, 1);
-  transition: all .15s ease-in-out;
+  padding: 0.5rem 0;
+  color: var(--card-background);
+  transition: all 0.15s ease-in-out;
 }
 
 .radio-inputs .radio input:checked + .name {
-  background-color: #fff;
+  background-color: var(--secondary-color);
   font-weight: 600;
+  color: var(--primary-color);
 }
-small{
+small {
   margin: 2px;
 }
