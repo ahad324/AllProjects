@@ -24,7 +24,7 @@ const Card = ({ project, index }) => {
           <CardItem translateZ={60} className="card-item Details">
             <h2>{project.title}</h2>
           </CardItem>
-          <CardItem as={"p"} translateZ={40} className="card-item Details">
+          <CardItem translateZ={40} className="card-item Details">
             <p>{project.description}</p>
           </CardItem>
           <CardItem translateZ={30} className="card-item Buttons">

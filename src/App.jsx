@@ -1,10 +1,10 @@
-import Header from "./components/header.jsx";
+import Nav from "./components/Nav.jsx";
 import Container from "./components/container.jsx";
 
 function App() {
   return (
     <>
-      <Header />
+      <Nav />
       <Container />
     </>
   );

@@ -24,7 +24,7 @@
   display: flex;
   cursor: pointer;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border-radius: 0.5rem;
   border: none;
   padding: 0.5rem 0;
@@ -36,7 +36,4 @@
   background-color: var(--secondary-color);
   font-weight: 600;
   color: var(--primary-color);
-}
-small {
-  margin: 2px;
 }

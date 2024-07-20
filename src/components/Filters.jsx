@@ -20,7 +20,7 @@ const Filters = ({ onFilterChange }) => {
   ];
 
   return (
-    <div>
+    <>
       <div className="radio-inputs">
         {filterOptions.map((filter) => (
           <label className="radio" key={filter.name}>
@@ -31,12 +31,12 @@ const Filters = ({ onFilterChange }) => {
               onChange={() => handleFilterChange(filter.name)}
             />
             <span className="name">
-              {filter.icon} <small> </small> {filter.name}
+              {filter.icon} {filter.name}
             </span>
           </label>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

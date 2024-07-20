@@ -106,7 +106,7 @@ function Container() {
   return (
     <main>
       <div className="Filter-SearchBox">
-        <BlurFade className="searchBox" delay={0.2} once={false} inview>
+        <BlurFade className="searchBox" delay={0.2} inview>
           <input
             className="searchInput"
             value={searchTerm}
@@ -123,12 +123,12 @@ function Container() {
             <FaSearch />
           </button>
         </BlurFade>
-        <BlurFade className="Filter" delay={0.5} once={false} inview>
+        <BlurFade className="Filter" delay={0.5} inview>
           <Filters onFilterChange={handleFilterChange} />
         </BlurFade>
       </div>
 
-      <section>
+      <section className="ProjectsSection">
         {currentProjects.map((project, index) => (
           <Card key={crypto.randomUUID()} project={project} index={index} />
         ))}
