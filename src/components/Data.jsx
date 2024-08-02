@@ -1,8 +1,7 @@
 // Images
-// import portfolioImage from ".../assets/portfolio.webp";
+// HTML,CSS,JS
 import portfolioImage from "../assets/portfolio.webp";
 import gradegenieImage from "../assets/gradegenie.webp";
-import todoImage from "../assets/todo.webp";
 import spaceImage from "../assets/space.webp";
 import weatherImage from "../assets/weatherapp.webp";
 import shoppingImage from "../assets/shopping.webp";
@@ -22,12 +21,25 @@ import introsectionImage from "../assets/introsection.webp";
 import snakegameImage from "../assets/snakegame.webp";
 import pianogameImage from "../assets/pianogame.webp";
 import colorpaletteImage from "../assets/colorpalette.webp";
+// REACT
+import todoImage from "../assets/todo.webp";
 import chatappImage from "../assets/chatapp.webp";
 import bmsImage from "../assets/bms.webp";
 import coderscaffeeImage from "../assets/coderscaffee.webp";
 import homebudgetImage from "../assets/homebudget.webp";
+import docsshareImage from "../assets/docs-share.webp";
 
 const Data = [
+  {
+    imgUrl: docsshareImage,
+    altText: "Docs Share Image",
+    title: "Docs Share",
+    description:
+      "An online file sharing platform built with React, FramerMotion, Appwrite.",
+    github: "https://github.com/ahad324/Docs-share",
+    LiveUrl: "https://docs-share.netlify.app/",
+    category: ["react", "featured"],
+  },
   {
     imgUrl: homebudgetImage,
     altText: "Home Budget Image",

@@ -4,7 +4,7 @@ nav {
   align-items: center;
   padding: 20px;
   background: var(--primary-color);
-  box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%);
+  box-shadow: var(--box-shadow);
   color: var(--secondary-color);
 }
 .logo-text{
@@ -12,6 +12,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-shadow: 0;
+  user-select: none;
 }
 .logo-text>pre{
   margin-left: 5px;

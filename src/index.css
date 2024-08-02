@@ -5,6 +5,7 @@
   --text-color: #000000;
   --card-background: #e5e5e5;
   --background: hsl(190 60% 98%);
+  --box-shadow:-4px 5px 17px 0px rgb(0 0 0 / 20%);
 }
 
 ::-webkit-scrollbar {
@@ -70,11 +71,11 @@ main {
   border: 1px solid #a1a1a1;
   box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%), 4px 5px,
     4px -5px 17px 0px rgb(0 0 0 / 20%), -4px -5px;
-  transition: 0.1s all ease;
-  color: var(--text-color);
-}
-
-.Image {
+    transition: 0.1s all ease;
+    color: var(--text-color);
+  }
+  
+  .Image {
   min-width: 200px;
   min-height: 200px;
   width: 100%;
@@ -102,6 +103,7 @@ a {
   color: var(--secondary-color);
   border-radius: 5px;
   margin: 5px;
+  box-shadow: var(--box-shadow);
 }
 a:hover {
   box-shadow: -4px 5px 17px 0px rgb(0 0 0 / 20%);
@@ -116,6 +118,7 @@ a:hover {
 }
 i {
   margin: 5px;
+  display: flex;
 }
 /* Search Box Styles */
 .searchBox {
@@ -213,6 +216,7 @@ button:active {
   &.activePaginationPage {
     background: var(--primary-color);
     color: var(--secondary-color);
+    box-shadow: var(--box-shadow);
   }
 }
 @media screen and (max-width: 322px) {

@@ -33,6 +33,7 @@
   background-color: #e0e0e3;
   transition: 0.4s;
   border-radius: 30px;
+  box-shadow: var(--box-shadow);
 }
 
 .slider:before {
