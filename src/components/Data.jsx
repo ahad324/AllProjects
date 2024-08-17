@@ -27,17 +27,17 @@ import chatappImage from "../assets/chatapp.webp";
 import bmsImage from "../assets/bms.webp";
 import coderscaffeeImage from "../assets/coderscaffee.webp";
 import homebudgetImage from "../assets/homebudget.webp";
-import docsshareImage from "../assets/docs-share.webp";
+import docnowImage from "../assets/docnow.webp";
 
 const Data = [
   {
-    imgUrl: docsshareImage,
-    altText: "Docs Share Image",
-    title: "Docs Share",
+    imgUrl: docnowImage,
+    altText: "Doc Now Image",
+    title: "Docs Now",
     description:
       "An online file sharing platform built with React, FramerMotion, Appwrite.",
-    github: "https://github.com/ahad324/Docs-share",
-    LiveUrl: "https://docs-share.netlify.app/",
+    github: "https://github.com/ahad324/DocNow",
+    LiveUrl: "https://docnow.netlify.app/",
     category: ["react", "featured"],
   },
   {
