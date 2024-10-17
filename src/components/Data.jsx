@@ -44,7 +44,7 @@ const Data = [
   {
     imgUrl: docnowImage,
     altText: "Doc Now Image",
-    title: "Docs Now",
+    title: "Doc Now",
     description:
       "An online file sharing platform built with React, FramerMotion, Appwrite.",
     github: "https://github.com/ahad324/DocNow",
