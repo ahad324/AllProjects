@@ -28,8 +28,19 @@ import bmsImage from "../assets/bms.webp";
 import coderscaffeeImage from "../assets/coderscaffee.webp";
 import homebudgetImage from "../assets/homebudget.webp";
 import docnowImage from "../assets/docnow.webp";
+import academicfilesImage from "../assets/academicfiles.webp";
 
 const Data = [
+  {
+    imgUrl: academicfilesImage,
+    altText: "Academic Files Image",
+    title: "Academic Files",
+    description:
+      "Academic file submission platform. React, Framer Motion, Appwrite. [Demo: Demo@mail.com, DemoUser]",
+    github: "https://github.com/ahad324/AcademicFiles",
+    LiveUrl: "https://academicfiles.netlify.app/login",
+    category: ["react", "featured"],
+  },
   {
     imgUrl: docnowImage,
     altText: "Doc Now Image",
