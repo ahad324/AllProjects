@@ -29,8 +29,19 @@ import coderscaffeeImage from "../assets/coderscaffee.webp";
 import homebudgetImage from "../assets/homebudget.webp";
 import docnowImage from "../assets/docnow.webp";
 import academicfilesImage from "../assets/academicfiles.webp";
+import transferXImage from "../assets/transferx.webp";
 
 const Data = [
+  {
+    imgUrl: transferXImage,
+    altText: "TransferX Image",
+    title: "TransferX",
+    description:
+      "TransferX: A sleek Python-based desktop app for secure and seamless offline file transfers on local networks!",
+    github: "https://github.com/ahad324/transferx",
+    LiveUrl: "https://transferx.netlify.app/",
+    category: ["react", "featured"],
+  },
   {
     imgUrl: academicfilesImage,
     altText: "Academic Files Image",
