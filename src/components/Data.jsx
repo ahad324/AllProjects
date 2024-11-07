@@ -145,7 +145,7 @@ const Data = [
     description: "A simple Weather website to see weather updates.",
     github: "https://github.com/ahad324/Weatherapp",
     LiveUrl: "https://ahad324.github.io/WeatherApp/",
-    category: ["html", "css", "js", "featured"],
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: shoppingImage,
@@ -155,7 +155,7 @@ const Data = [
       "A simple Carting website to showcase some products and implementation of carting.",
     github: "https://github.com/ahad324/ShoppingApp/",
     LiveUrl: "https://ahad324.github.io/ShoppingApp/",
-    category: ["html", "css", "js", "featured"],
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: snakegameImage,
@@ -164,7 +164,7 @@ const Data = [
     description: "A fun Snake Game 🐍.",
     github: "https://github.com/ahad324/SnakeGame/",
     LiveUrl: "https://ahad324.github.io/SnakeGame/",
-    category: ["html", "css", "js", "featured"],
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: pianogameImage,
@@ -173,7 +173,7 @@ const Data = [
     description: "A fun Piano Game 🎹.",
     github: "https://github.com/ahad324/PianoGame/",
     LiveUrl: "https://ahad324.github.io/PianoGame/",
-    category: ["html", "css", "js", "featured"],
+    category: ["html", "css", "js"],
   },
   {
     imgUrl: colorpaletteImage,
