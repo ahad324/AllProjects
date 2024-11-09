@@ -37,8 +37,8 @@ const Data = [
     altText: "TransferX Image",
     title: "TransferX",
     description:
-      "TransferX: A sleek Python-based desktop app for secure and seamless offline file transfers on local networks!",
-    github: "https://github.com/ahad324/transferx",
+      "TransferX: Python-based desktop app for secure and seamless offline file transfers on local networks!",
+    github: "https://github.com/ahad324/TransferXWeb",
     LiveUrl: "https://transferx.netlify.app/",
     category: ["react", "featured"],
   },
