@@ -116,9 +116,9 @@ const Data = [
     title: "Gradegenie",
     description:
       "An Online tool to calculate gpa, cgpa and sgpa and many more.",
-    github: "https://github.com/ahad324/MarksCalculator/",
-    LiveUrl: "https://ahad324.github.io/MarksCalculator/",
-    category: ["html", "css", "js", "featured"],
+    github: "https://github.com/ahad324/GradeGenie/",
+    LiveUrl: "https://gradegenie.site",
+    category: ["react", "featured"],
   },
   {
     imgUrl: todoImage,
