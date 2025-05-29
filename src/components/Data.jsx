@@ -117,7 +117,7 @@ const Data = [
     description:
       "An Online tool to calculate gpa, cgpa and sgpa and many more.",
     github: "https://github.com/ahad324/GradeGenie/",
-    LiveUrl: "https://gradegenie.site",
+    LiveUrl: "https://gradegenie.netlify.app",
     category: ["react", "featured"],
   },
   {
