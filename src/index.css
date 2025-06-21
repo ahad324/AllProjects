@@ -191,61 +191,23 @@ button:active {
   padding: 24px 46px 24px 26px;
 }
 
-/* Pagination Styles */
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.pagination button {
-  background-color: white;
-  color: black;
-  border-radius: 10em;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 0.5em 1em;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid black;
-  box-shadow: 0 0 0 0 black;
-
-  &:hover {
-    transform: translateY(-4px) translateX(-2px);
-    box-shadow: 2px 5px 0 0 black;
-  }
-
-  &:active {
-    transform: translateY(2px) translateX(1px);
-    box-shadow: 0 0 0 0 black;
-  }
-}
-
-.pagination div {
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pagination div>span {
-  padding: 5px 10px;
+/* Footer Styles */
+.footer {
+  padding: 20px;
   text-align: center;
-  border-radius: 3px;
-  cursor: pointer;
-  color: var(--text-color);
-
-  &:hover {
-    background: #afb0b1;
-  }
-
-  &.activePaginationPage {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    box-shadow: var(--box-shadow);
-  }
+  margin-top: 50px;
+  background:var(--card-background);
+  border: none;
+  border-radius: 20px;
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
 
 @media screen and (max-width: 322px) {
   .Buttons {

@@ -6,10 +6,12 @@ import Data from "./Data.jsx";
 import BlurFade from "./UI/BlurFade";
 import Filters from "./Filters.jsx";
 import Card from "./Card.jsx";
+import Pagination from "./Pagination.jsx";
+import Footer from "./Footer.jsx";
 
 function Container() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedFilter, setSelectedFilter] = useState(""); // Change to a single filter
+  const [selectedFilter, setSelectedFilter] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 3;
 
@@ -19,13 +21,12 @@ function Container() {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
   }, []);
 
   const handleFilterChange = (filter) => {
-    setSelectedFilter(filter); // Update to handle a single filter
-    setCurrentPage(1); // Reset to the first page when filters change
+    setSelectedFilter(filter);
+    setCurrentPage(1);
   };
 
   const filteredData = useMemo(() => {
@@ -55,53 +56,12 @@ function Container() {
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
-    setCurrentPage(1); // Reset to the first page when search term changes
+    setCurrentPage(1);
   };
 
   const handlePageChange = useCallback((pageNumber) => {
     setCurrentPage(pageNumber);
   }, []);
-
-  const handleNextPage = useCallback(() => {
-    setCurrentPage((prevPage) => prevPage + 1);
-  }, []);
-
-  const handlePreviousPage = useCallback(() => {
-    setCurrentPage((prevPage) => prevPage - 1);
-  }, []);
-
-  const renderPagination = useMemo(() => {
-    const pageNumbers = [];
-    for (let i = 1; i <= totalPages; i++) {
-      if (
-        i === 1 ||
-        i === totalPages ||
-        (i >= currentPage - 1 && i <= currentPage + 1)
-      ) {
-        pageNumbers.push(i);
-      } else if (pageNumbers[pageNumbers.length - 1] !== "...") {
-        pageNumbers.push("...");
-      }
-    }
-
-    return (
-      <div>
-        {pageNumbers.map((number, index) =>
-          number === "..." ? (
-            <span key={index}>...</span>
-          ) : (
-            <span
-              key={crypto.randomUUID()}
-              onClick={() => handlePageChange(number)}
-              className={currentPage === number ? "activePaginationPage" : ""}
-            >
-              {number}
-            </span>
-          )
-        )}
-      </div>
-    );
-  }, [totalPages, currentPage, handlePageChange]);
 
   return (
     <main>
@@ -118,7 +78,6 @@ function Container() {
             className="searchButton"
             aria-label="Search"
             title="Search"
-            href="#"
             type="button"
           >
             <FaSearch />
@@ -136,19 +95,13 @@ function Container() {
         {currentPage === totalPages && <Comingsoon />}
       </section>
 
-      <div className="pagination">
-        {currentPage > 1 && (
-          <button onClick={handlePreviousPage} type="button">
-            Previous
-          </button>
-        )}
-        {renderPagination}
-        {currentPage < totalPages && (
-          <button onClick={handleNextPage} type="button">
-            Next
-          </button>
-        )}
-      </div>
+      {/* ✅ Use new Pagination component */}
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
+      <Footer />
     </main>
   );
 }

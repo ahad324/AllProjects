@@ -1,0 +1,65 @@
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* General styles for page numbers */
+.pagination-page {
+  padding: 0.7rem 1.1rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: bold;
+  background: transparent;
+  color: var(--text-color);
+}
+
+/* Hover effect for non-active pages */
+.pagination-page:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.pagination-active {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Arrows style (solid background, no glossy) */
+.pagination-arrow {
+  border: none;
+  padding: 0.7rem .8rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background: var(--primary-color);
+  color: var(--secondary-color)
+}
+.pagination-arrow:hover{
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Disabled arrow state */
+.pagination-arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Ellipsis (...) */
+.pagination-ellipsis {
+  padding: 0 0.2rem;
+  color: #999;
+}

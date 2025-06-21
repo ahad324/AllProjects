@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/Filters.css";
 import { FaHtml5, FaReact, FaStar } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 
 const Filters = ({ onFilterChange }) => {
   const [selectedFilter, setSelectedFilter] = useState(""); // Single filter state
@@ -15,6 +16,7 @@ const Filters = ({ onFilterChange }) => {
   const filterOptions = [
     { name: "HTML", icon: <FaHtml5 /> },
     { name: "React", icon: <FaReact /> },
+    { name: "NextJS", icon: <RiNextjsFill /> },
     { name: "C++", icon: <SiCplusplus /> },
     { name: "Featured", icon: <FaStar /> },
   ];

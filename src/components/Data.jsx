@@ -30,8 +30,21 @@ import homebudgetImage from "../assets/homebudget.webp";
 import docnowImage from "../assets/docnow.webp";
 import academicfilesImage from "../assets/academicfiles.webp";
 import transferXImage from "../assets/transferx.webp";
+// NEXTJS
+import nextPortfolio from "../assets/nextportfolio.webp";
 
 const Data = [
+  {
+    imgUrl: nextPortfolio, // Use the same image or replace with a new one if available
+    altText: "Next.js Portfolio",
+    title: "Next.js Portfolio",
+    description:
+      "This is my latest personal portfolio website built with Next.js and Tailwind CSS.",
+    github: "https://github.com/ahad324/Nextjs-Portfolio", // update if you used a different repo
+    LiveUrl: "https://ahad-devsite.netlify.app/",
+    category: ["nextjs"],
+  },
+
   {
     imgUrl: transferXImage,
     altText: "TransferX Image",
