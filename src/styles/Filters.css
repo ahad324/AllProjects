@@ -1,0 +1,44 @@
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+  box-shadow: var(--box-shadow);
+  padding: 0.25rem;
+  width: 100%;
+  font-weight: 900;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 0;
+  color: var(--card-background);
+  transition: all 0.15s ease-in-out;
+}
+.name > small{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2px;
+}
+.radio-inputs .radio input:checked + .name {
+  background-color: var(--secondary-color);
+  font-weight: 600;
+  color: var(--primary-color);
+}
