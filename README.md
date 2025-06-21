@@ -15,7 +15,7 @@ Here are some of the projects I've developed:
 - **[Bank Management System](https://bmscpp.netlify.app/)**: A Banking Management System built with C++ for Front-End and JS for backend. [GitHub](https://github.com/ahad324/BankManagementSystemCpp)
 - **[Chat App](https://rchatting.netlify.app)**: A Real-Time Chat Application with React and Appwrite. [GitHub](https://github.com/ahad324/chatApp/)
 - **[Portfolio](https://ahad324.github.io/Portfolio/)**: My Personal Portfolio showcasing HTML, CSS, and JS projects. [GitHub](https://github.com/ahad324/Portfolio/)
-- **[Gradegenie](https://ahad324.github.io/MarksCalculator/)**: An Online tool to calculate GPA, CGPA, SGPA, and more. [GitHub](https://github.com/ahad324/MarksCalculator/)
+- **[Gradegenie](https://ahad324.github.io/GradeGenie/)**: An Online tool to calculate GPA, CGPA, SGPA, and more. [GitHub](https://github.com/ahad324/GradeGenie/)
 - **[Todo App](https://ahad324.github.io/ReactTodoApp/)**: A Web-based Todo app made with React. [GitHub](https://github.com/ahad324/ReactTodoApp/)
 - **[Space Website](https://ahad324.github.io/SpaceWebsite/)**: A simple website with multipage navigation. [GitHub](https://github.com/ahad324/SpaceWebsite)
 - **[Weather App](https://ahad324.github.io/WeatherApp/)**: A simple Weather website to see weather updates. [GitHub](https://github.com/ahad324/Weatherapp)
